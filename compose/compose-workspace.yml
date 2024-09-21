@@ -7,3 +7,9 @@ services:
       - "8888:8888"
     volumes:
       - ./jupyterlab/data:/var/lib/foxstudios/neuroline/workspace/data
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - capabilities:
+                - gpu

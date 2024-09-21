@@ -12,6 +12,7 @@ RUN curl -sS https://bootstrap.pypa.io/get-pip.py | python3.11
 
 RUN pip install -r requirements.txt
 
+RUN pip install tensorflow[and-cuda]
 RUN pip install jupyterlab
 
 WORKDIR /var/lib/foxstudios/neuroline/workspace/data
