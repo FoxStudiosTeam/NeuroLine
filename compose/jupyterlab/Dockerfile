@@ -6,6 +6,7 @@ WORKDIR /tmp/
 
 EXPOSE 8888
 
+#TODO REMOVE IT OR REPLACE IMAGE @FROM
 RUN apt update -y
 RUN apt install python3.11 python3.11-distutils -y python3-pip
 RUN curl -sS https://bootstrap.pypa.io/get-pip.py | python3.11
