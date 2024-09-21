@@ -6,7 +6,4 @@ services:
     ports:
       - "8888:8888"
     volumes:
-      - data:/var/lib/foxstudios/neuroline/workspace/data
-
-volumes:
-  data:
+      - ./jupyterlab/data:/var/lib/foxstudios/neuroline/workspace/data
