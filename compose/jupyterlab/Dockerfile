@@ -13,4 +13,7 @@ RUN curl -sS https://bootstrap.pypa.io/get-pip.py | python3.11
 RUN pip install -r requirements.txt
 
 RUN pip install jupyterlab
-ENTRYPOINT ["jupyter","lab","--allow-root", "--ip=0.0.0.0"]
+
+WORKDIR /var/lib/foxstudios/neuroline/workspace/data
+
+ENTRYPOINT ["jupyter", "lab", "--allow-root", "--ip=0.0.0.0"]
