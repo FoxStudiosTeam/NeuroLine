@@ -1,4 +1,4 @@
-FROM ubuntu:22.04 as runtime
+FROM tensorflow/tensorflow:latest-gpu as runtime
 
 COPY requirements.txt /tmp/
 
