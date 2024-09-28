@@ -1,3 +1,5 @@
 dataset/archive.zip
-dataset/Female/*
-dataset/Male/*
+dataset/Female
+dataset/Male
+dataset/MaleControl
+dataset/FemaleControl
