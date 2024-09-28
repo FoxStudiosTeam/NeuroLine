@@ -15,6 +15,9 @@ RUN pip install -r requirements.txt
 
 RUN pip install tensorflow[and-cuda]
 RUN pip install jupyterlab
+RUN pip install ultralytics
+RUN apt-get update && apt-get install ffmpeg libsm6 libxext6  -y
+
 
 WORKDIR /var/lib/foxstudios/neuroline/workspace/data
 
