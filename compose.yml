@@ -2,7 +2,7 @@ version: "3"
 
 services:
   jupyterlab:
-    build: jupyterlab
+    build: compose/jupyterlab
     ports:
       - "8888:8888"
     volumes:
@@ -13,3 +13,9 @@ services:
           devices:
             - capabilities:
                 - gpu
+  label-studio:
+    build: labelstudio
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./mydata:/label-studio/data heartexlabs/label-studio:latest
